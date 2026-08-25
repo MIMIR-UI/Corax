@@ -6,3 +6,5 @@ Used for testing and debugging pi and SX1262 communication, and for basic point-
 
 The SX1262 communicates with the pi via serial ports, so be sure to enable that in your pi-config.
 
+To follow the setup guide I made 'DEBUG_SETUP_FOR_DUMMIES' go to 'Docs' in 'main'
+
