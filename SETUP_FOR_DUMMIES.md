@@ -1,8 +1,8 @@
-#Setup For Dummies
+## Setup For Dummies
 
 In case you didn't know how to setup the pi and hat for the debugging process, here is a detailed explanation of what you need to do.
 
-#1. Flash the microSD card
+## 1. Flash the microSD card
 
 Use Raspberry Pi Imager and install:
 
@@ -15,13 +15,13 @@ Enable SSH
 
 For additional nodes, use different hostnames
 
-#2. Install the microSD and HAT
+## 2. Install the microSD and HAT
 Insert the microSD into the Pi.
 Install the LoRa HAT onto the GPIO header.
 Attach the antenna before using the radio.
 Power on the Pi.
 
-#3. Connect to the Pi
+## 3. Connect to the Pi
 
 Your computer and Pi must be on the same network.
 
@@ -31,7 +31,7 @@ ssh username@hostname.local
 
 EXAMPLE: ssh corax@corax-01.local
 
-#4. Enable the Pi serial port
+## 4. Enable the Pi serial port
 
 On the Pi: 
 
@@ -51,7 +51,7 @@ Then reboot. If not prompted to reboot, use: sudo reboot
 
 Reconnect through SSH afterward.
 
-#5. Verify the serial port
+## 5. Verify the serial port
 
 Run: ls -l /dev/serial*
 
@@ -59,7 +59,7 @@ You should see something similar to:
 
 /dev/serial0 -> ttyS0
 
-#6. Install Python serial support
+## 6. Install Python serial support
 
 Run:
 
@@ -78,7 +78,7 @@ You want:
 
 serial open: True
 
-#7. Configure the LoRa HAT jumpers
+## 7. Configure the LoRa HAT jumpers
 
 For normal Corax debugging:
 
@@ -88,7 +88,7 @@ B = Pi ↔ LoRa
 
 Do not change the radio configuration jumpers while the Pi is powered.
 
-#8. Copy the debug files onto the Pi
+## 8. Copy the debug files onto the Pi
 
 The working Python files are located in the repository's debug branch.
 
@@ -104,7 +104,7 @@ Copy them to the Pi:
 
 scp main.py config.py message.py radio.py corax@corax-01.local:~/corax/
 
-#9. Set the node ID
+## 9. Set the node ID
 
 Each Pi needs its own node ID inside config.py.
 
@@ -118,7 +118,7 @@ NODE_ID = "CORAX-02"
 
 Do not give two physical nodes the same NODE_ID.
 
-#10. Run Corax
+## 10. Run Corax
 
 SSH into the Pi and enter the project folder:
 
@@ -136,7 +136,7 @@ That's about as simple and directional as I can put it, thus, it's for dummies.
 
 
 
-#Useful Commands
+## Useful Commands
 
 Stop Corax:
 
