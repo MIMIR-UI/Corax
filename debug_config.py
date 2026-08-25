@@ -1,7 +1,0 @@
-NODE_ID = "CORAX-01"
-
-SERIAL_PORT = "/dev/serial0"
-BAUD_RATE = 9600
-
-ACK_TIMEOUT = 5
-MAX_RETRIES = 2
