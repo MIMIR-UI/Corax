@@ -23,5 +23,5 @@ ACK retries:
 Result:
 100% successful at all tested points
 
-Corax-01 was placed on the second floor of the 1BDE building, while Corax-02 travelled to various points in and around the building, proving at minimum a
+Corax-01 was placed on the second floor of the 7232 building, while Corax-02 travelled to various points in and around the building, proving at minimum a
 600m range capability through solid material and over distances and behind hills. 
