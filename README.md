@@ -1,38 +1,39 @@
 # Project Corax
-# Named because, yknow, raven. Duh. EW. Moving on.
 
-Corax is a Raspberry Pi–based low-power text communications project using SX1262/E22-series LoRa radio hardware. The current goal is simple, reliable point-to-point messaging between portable nodes, with the architecture designed so additional capabilities can be added later.
+Corax is a Raspberry Pi–based low-power text communications project using SX1262/E22-series LoRa radio hardware.
 
-## Current Hardware
+The current goal is reliable portable point-to-point messaging, with future development focused on testing tools, message reliability, and multi-node networking.
+
+## Current Status
+
+Current stable version: **v0.1**
+
+- Bidirectional text messaging
+- Session IDs
+- ACKs and retries
+- Duplicate suppression
+- Inbox
+- Broadcast addressing
+- Debug terminal interface
+
+## Hardware
+
 - Raspberry Pi 3 Model A+
 - E22/SX1262 LoRa HAT
 - 915 MHz radio hardware
-- microSD-based Raspberry Pi OS
-- Headless operation over SSH during development
 
-## Current Software Capabilities
-- Bidirectional text messaging between two Corax nodes
-- Session IDs/callsigns for addressing users during a session
-- Unique message IDs
-- UTC timestamps with human-readable local display time
-- Message acknowledgements (ACKs)
-- Automatic ACK timeout and retransmission
-- Duplicate-message suppression
-- Basic inbox for received messages
-- Broadcast addressing using `ALL`
-- Temporary/debug terminal interface
-- Separate configuration, messaging, and radio modules
+## Documentation
 
-## Current Architecture
-- `main.py` — debug interface and application flow
-- `message.py` — message creation, encoding, decoding, and ACK packets
-- `radio.py` — UART communication with the LoRa radio
-- `config.py` — node and communication settings
+- Setup guide
+- Development goals
+- Protocol documentation
+- Testing notes
 
-Corax currently communicates with the radio over UART at 9600 baud. Messages are serialized as JSON, converted to bytes, transmitted over LoRa, reconstructed by the receiving node, and acknowledged back to the sender.
+## Development
 
-## Development Status
-The basic point-to-point communications layer is functional and stable under repeated messaging. Current development is focused on improving testing tools, message handling, protocol structure, and reliability before expanding toward additional networking capabilities.
+Stable code lives on `main`.
 
-Everything prior to this line is part of version 0.1
+Active development takes place on `dev`.
+
+Version history is tracked through GitHub Releases and tags.
 
