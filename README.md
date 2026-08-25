@@ -34,3 +34,5 @@ Corax currently communicates with the radio over UART at 9600 baud. Messages are
 ## Development Status
 The basic point-to-point communications layer is functional and stable under repeated messaging. Current development is focused on improving testing tools, message handling, protocol structure, and reliability before expanding toward additional networking capabilities.
 
+Everything prior to this line is part of version 0.1
+
