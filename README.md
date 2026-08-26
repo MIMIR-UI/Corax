@@ -33,7 +33,5 @@ Current stable version: **v0.1**
 
 Stable code lives on `main`.
 
-Active development takes place on `dev`.
-
-Version history is tracked through GitHub Releases and tags.
+Active development takes place on `changelogs`.
 
